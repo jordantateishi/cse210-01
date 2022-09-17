@@ -1,3 +1,5 @@
+# W01 Prove: Developer
+# Jordan Tateishi
 
 board = ["1", "2", "3",
         "4", "5", "6",
@@ -5,6 +7,14 @@ board = ["1", "2", "3",
 current_player = "X"
 winner = None
 game_active = True
+
+def main(board):
+    while game_active:
+        print_board(board)
+        player_turn(board)
+        check_winner(board)
+        check_draw(board)
+        player()
 
 
 def print_board(board):
@@ -90,12 +100,7 @@ def player():
 
 
 
-while game_active:
-    print_board(board)
-    player_turn(board)
-    check_winner(board)
-    check_draw(board)
-    player()
+main(board)
 
 
 
