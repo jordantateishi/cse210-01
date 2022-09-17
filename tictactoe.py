@@ -77,7 +77,7 @@ def check_winner(board):
 def check_draw(board):
     global game_active
     if "1" and "2" and "3" and "4" and "5" and "6" and "7" and "8" and "9" not in board:
-        print("\nEnd\n")
+        print("\nGood game. Thanks for playing!\n")
         game_active = False
 
 
